@@ -1,0 +1,129 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color:#fff;
+}
+.header { 
+    background-image: url("../images/bgc.png");
+    background-size: cover;
+    height: 900px;
+    padding-top: 30px;
+    padding-bottom: 19.5px;
+}
+.head-bar{
+    display: flex;
+    flex-direction: column;
+    max-width: 1110px;
+    margin: 0 auto;
+    color:#fff;
+}
+
+.header-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-info a {
+
+}
+.header-nav ul{
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding-inline-start: 0px;
+
+}
+.header-li {
+    list-style: none;
+    padding-top: 11.5px;
+    padding-bottom: 14.5px;
+}
+/*бордеры в меню между строк
+
+
+.header-ul li:nth-child(-n+3){
+    border-right: 1px solid #fff;
+}
+*/
+.header-button{
+    display: flex;
+    width: 415px;
+    height: 50px;
+    margin: 700px auto;
+    justify-content: space-evenly;
+}
+
+.header-button input{
+    border: 0px;
+    padding: 15px 30px;
+    background-color: rgb(153, 134, 42);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+.main{
+    height: 100vh;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    min-width: 1110px;
+    height: 100%;
+    width: 100%;
+    scroll-snap-align: end;
+}
+
+
+.best-taste{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(40, 40, 40);
+    height: 856px;
+}
+
+.block-info-taste {
+    width: 1110px;
+    height: 656px;
+    border: 2px solid rgb(255, 255, 255);
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.block-info-taste p{
+    width: 733px;
+    height: 192px;
+}
+
+.block-info-taste hr{
+    width: 160px;
+}
+
+.block-info-taste img {
+    height: 160px;
+    width: 160px;
+}
+
+
+.new-collection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(230, 227, 196);
+    height: 1038px;
+}
