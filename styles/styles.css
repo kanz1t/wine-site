@@ -9,7 +9,7 @@ a {
 }
 .header { 
     min-width: 1110px;
-    background-image: url("../images/bgc.png");
+    background: url("../images/bgc.png")  no-repeat center / cover;
     background-size: cover;
     height: 900px;
     padding-top: 30px;
@@ -76,7 +76,6 @@ input{
     width: 100%;
 }
 
-
 .best-taste{
     display: flex;
     flex-direction: column;
@@ -136,7 +135,7 @@ input{
 
 .info-block-collection-block {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     margin: 60px auto;
     width: 1100px;
     height: 758px;
@@ -201,4 +200,147 @@ input{
     margin-top: 30px;
     height: 228px;
     width: 255px;
+}
+
+.record-tasting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 767px;
+    padding-top: 120px;
+    background-color: rgb(40, 40, 40);
+}
+
+.record-info-sab-block {
+    position: relative;
+    display: flex;
+    max-width: 1110px;
+    margin: 0 auto;
+    height: 607px;
+    width: 1193px;
+    color: #fff;
+}
+
+.record-input-name, .record-input-tel, .record-input-adress  {
+    background: transparent;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 40px;
+    width: 255px;
+    text-transform: none;
+    
+}
+
+.record-input-name::placeholder, .record-input-tel::placeholder, .record-input-adress::placeholder  {
+    color:#fff
+}
+.record-input-tel {
+    margin-left: 25px;
+}
+.record-input-adress{
+    width: 100%;
+}
+
+.record-input-btn{
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    width: 100%;
+}
+
+.record-info-sab { 
+    text-align: center;
+}
+
+.title-record{
+    position: absolute;
+    top:-45px;
+    left: 34%;
+    padding: 10px 50px;
+    background-color:rgb(40, 40, 40) ;
+}
+.info-record{
+    text-align: center;
+    width: 539px;
+    height: 72px;
+    margin-bottom: 81px;
+    font-size: 20px;
+}
+.record-form-sab{
+    position: relative;
+    padding: 105px 285px 80px;
+    border: 3px solid rgb(196, 196, 196);
+}
+.record-line{
+    width: 118px;
+    margin-bottom: 40px;
+}
+
+.record-img1{
+    position: absolute;
+    top: -10%;
+}
+.record-img2{
+    position: absolute;
+    top: -10%;
+    left: 82%;
+}
+
+
+
+.footer-block{ 
+    display: flex;
+    justify-content: center;
+    height: 220px;
+    background-color: rgb(153, 132, 49);
+    text-align: center;
+    text-transform: uppercase
+}
+
+.footer-block-info{
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-ul{
+    display: flex;
+    list-style: none;
+    padding: 19.5px;
+    width: 1100px;
+    justify-content: space-evenly;
+    border-top: 1px solid rgb(255, 255, 255);
+}
+
+.footer-block-social {
+    display: flex;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    color: #fff
+}
+.footer-block-social>* {
+    padding: 1.125em 4em;
+}
+
+.footer-block-social-block{
+    padding: 19.5px 55px;
+    height: 16px;
+    display: flex;
+    height: 16px;
+    width: 200px;
+    justify-content: space-evenly;;
+    gap: 2.5em;
+}
+
+.footer-block-social>*+*{
+    border-left: 1px solid #fff;
+}
+
+@media screen and (max-width:1280px) {
+   
+    .record-img1,.record-img2 {
+        display: none;
+    }    
 }
