@@ -33,24 +33,24 @@ a {
 }
 .header-nav ul{
     display: flex;
-    justify-content: space-around;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
     padding-inline-start: 0px;
-
 }
+
+.header-nav ul>*+*{
+    border-left: 1px solid #fff;
+}
+
+
 .header-li {
     list-style: none;
     padding-top: 11.5px;
     padding-bottom: 14.5px;
+    padding-left: 100px;
+    padding-right: 110px;
 }
-/*бордеры в меню между строк
 
-
-.header-ul li:nth-child(-n+3){
-    border-right: 1px solid #fff;
-}
-*/
 .header-button{
     display: flex;
     width: 415px;
@@ -66,6 +66,11 @@ input{
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     cursor: pointer;
+}
+
+.header-button input:hover{
+    transition: 0.5s;
+    background: rgb(207, 178, 59);
 }
 
 .container{
@@ -248,6 +253,13 @@ input{
     width: 100%;
 }
 
+.record-input-btn:hover{
+    transition: 0.5s;
+    background-color: rgb(153, 132, 49);
+
+}
+
+
 .record-info-sab { 
     text-align: center;
 }
@@ -292,6 +304,7 @@ input{
     display: flex;
     justify-content: center;
     height: 220px;
+    min-width: 1110px;
     background-color: rgb(153, 132, 49);
     text-align: center;
     text-transform: uppercase
@@ -312,6 +325,7 @@ input{
     width: 1100px;
     justify-content: space-evenly;
     border-top: 1px solid rgb(255, 255, 255);
+    margin-bottom: 0px;
 }
 
 .footer-block-social {
